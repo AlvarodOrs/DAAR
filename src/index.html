@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Bitácora de un ingeniero</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bar">
+        <a class="logo" href="#inicio">bitácora<span>.dev</span></a>
+        <nav aria-label="Principal">
+          <a href="#inicio">Inicio</a><a href="#entrada-1">HTML</a
+          ><a href="#entrada-2">CSS</a><a href="#entrada-3">Despliegue</a
+          ><a href="#proyectos">Proyectos</a><a href="#documentacion">Docs</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- INICIO -->
+      <section class="page hero" id="inicio">
+        <span class="tag">Blog personal</span>
+        <h1>Apuntes de un estudiante de Ingeniería Informática</h1>
+        <p>
+          Escribo sobre lo que voy aprendiendo al construir webs reales, como la
+          de la asociación Hospitalidad de Lourdes de La Rioja o mis proyectos
+          personales. Tres entradas, cero frameworks: HTML y CSS puros.
+          <a href="#proyectos" style="color: var(--accent2)"
+            >Mira también mis proyectos →</a
+          >
+        </p>
+        <div class="grid">
+          <a class="card" href="#entrada-1"
+            ><img
+              src="img/entrada-1-html-semantico.svg"
+              alt="Código HTML semántico"
+              width="600"
+              height="300"
+            />
+            <div>
+              <span class="tag">HTML</span>
+              <h3>HTML semántico: la base que casi todos saltan</h3>
+              <p>
+                Por qué <code>&lt;main&gt;</code> importa más que otro
+                <code>&lt;div&gt;</code>.
+              </p>
+            </div></a
+          >
+          <a class="card" href="#entrada-2"
+            ><img
+              src="img/entrada-2-grid-flexbox.svg"
+              alt="Maqueta con cuadrícula"
+              width="600"
+              height="300"
+            />
+            <div>
+              <span class="tag">CSS</span>
+              <h3>Grid y Flexbox sin miedo</h3>
+              <p>Diseño responsive con muy pocas líneas.</p>
+            </div></a
+          >
+          <a class="card" href="#entrada-3"
+            ><img
+              src="img/entrada-3-despliegue.svg"
+              alt="Subida de un sitio a la nube"
+              width="600"
+              height="300"
+            />
+            <div>
+              <span class="tag">Despliegue</span>
+              <h3>De tu portátil a internet en 5 minutos</h3>
+              <p>Publicar un sitio estático con Git.</p>
+            </div></a
+          >
+        </div>
+      </section>
+
+      <!-- ENTRADA 1 -->
+      <section class="page" id="entrada-1">
+        <article>
+          <a class="back" href="#inicio">← Volver al inicio</a>
+          <p class="tag" style="margin-bottom: 0">HTML</p>
+          <h1>HTML semántico: la base que casi todos saltan</h1>
+          <p class="meta">25 de noviembre de 2026 · 4 min de lectura</p>
+          <figure>
+            <img
+              class="fig"
+              src="img/entrada-1-html-semantico.svg"
+              alt="Fragmento de código HTML con etiqueta main"
+              width="600"
+              height="300"
+            />
+            <figcaption>
+              Figura 1. Estructura mínima de una página semántica.
+            </figcaption>
+          </figure>
+          <p>
+            Cuando empecé a maquetar, todo era un
+            <code>&lt;div&gt;</code> dentro de otro <code>&lt;div&gt;</code>.
+            Funcionaba a la vista, pero ni los lectores de pantalla ni los
+            buscadores entendían la página. El HTML semántico consiste en usar
+            la etiqueta que describe el significado del contenido, no solo su
+            aspecto.
+          </p>
+          <h2>Las etiquetas que más uso</h2>
+          <ul>
+            <li>
+              <code>&lt;header&gt;</code> y <code>&lt;nav&gt;</code> para la
+              cabecera y la navegación.
+            </li>
+            <li>
+              <code>&lt;main&gt;</code> para el contenido principal (uno por
+              página).
+            </li>
+            <li>
+              <code>&lt;article&gt;</code> y <code>&lt;section&gt;</code> para
+              agrupar contenido con sentido propio.
+            </li>
+            <li>
+              <code>&lt;figure&gt;</code> con
+              <code>&lt;figcaption&gt;</code> para imágenes con pie.
+            </li>
+          </ul>
+          <pre>
+&lt;article&gt;
+  &lt;h1&gt;Título&lt;/h1&gt;
+  &lt;figure&gt;
+    &lt;img src="foto.jpg" alt="Descripción útil"&gt;
+    &lt;figcaption&gt;Pie de foto&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/article&gt;</pre
+          >
+          <blockquote>
+            El mejor texto alternativo es el que explica qué aporta la imagen,
+            no solo qué se ve en ella.
+          </blockquote>
+          <p>
+            Con estos cambios mis páginas mejoraron en accesibilidad y SEO sin
+            tocar una sola línea de CSS.
+          </p>
+          <div class="pn">
+            <span></span><a href="#entrada-2">Siguiente: Grid y Flexbox →</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ENTRADA 2 -->
+      <section class="page" id="entrada-2">
+        <article>
+          <a class="back" href="#inicio">← Volver al inicio</a>
+          <p class="tag" style="margin-bottom: 0">CSS</p>
+          <h1>Grid y Flexbox sin miedo</h1>
+          <p class="meta">25 de noviembre de 2026 · 5 min de lectura</p>
+          <figure>
+            <img
+              class="fig"
+              src="img/entrada-2-grid-flexbox.svg"
+              alt="Maqueta con bloques de distintos tamaños"
+              width="600"
+              height="300"
+            />
+            <figcaption>
+              Figura 2. Una cuadrícula irregular lograda con CSS Grid.
+            </figcaption>
+          </figure>
+          <p>
+            La pregunta típica es cuál usar. Mi regla:
+            <strong>Flexbox para una dimensión</strong> (una fila o una columna)
+            y <strong>Grid para dos dimensiones</strong> (filas y columnas a la
+            vez).
+          </p>
+          <table>
+            <tr>
+              <th>Necesito…</th>
+              <th>Uso</th>
+            </tr>
+            <tr>
+              <td>Barra de navegación</td>
+              <td>Flexbox</td>
+            </tr>
+            <tr>
+              <td>Galería de tarjetas</td>
+              <td>Grid</td>
+            </tr>
+            <tr>
+              <td>Centrar un elemento</td>
+              <td>Flexbox o Grid</td>
+            </tr>
+          </table>
+          <h2>Responsive en una línea</h2>
+          <p>
+            Este blog usa una sola declaración para que las tarjetas se adapten
+            a cualquier pantalla:
+          </p>
+          <pre>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+}</pre
+          >
+          <p>
+            Sin media queries, sin JavaScript. También conviene usar variables
+            CSS (<code>--accent</code>, <code>--bg</code>) para cambiar la
+            paleta y soportar modo oscuro desde un único sitio.
+          </p>
+          <div class="pn">
+            <a href="#entrada-1">← HTML semántico</a
+            ><a href="#entrada-3">Siguiente: Despliegue →</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ENTRADA 3 -->
+      <section class="page" id="entrada-3">
+        <article>
+          <a class="back" href="#inicio">← Volver al inicio</a>
+          <p class="tag" style="margin-bottom: 0">Despliegue</p>
+          <h1>De tu portátil a internet en 5 minutos</h1>
+          <p class="meta">25 de noviembre de 2026 · 4 min de lectura</p>
+          <figure>
+            <img
+              class="fig"
+              src="img/entrada-3-despliegue.svg"
+              alt="Nube con flecha de subida"
+              width="600"
+              height="300"
+            />
+            <figcaption>
+              Figura 3. Flujo de publicación: commit, push y despliegue
+              automático.
+            </figcaption>
+          </figure>
+          <p>
+            Un sitio estático es solo un conjunto de archivos, así que
+            publicarlo es muy barato. Plataformas como Vercel, Netlify, GitHub
+            Pages o Cloudflare lo hacen gratis y se integran con Git.
+          </p>
+          <h2>Pasos</h2>
+          <ol>
+            <li>
+              Crear un repositorio en GitHub con el <code>index.html</code>.
+            </li>
+            <li>Conectar el repositorio a la plataforma elegida.</li>
+            <li>
+              Cada <code>git push</code> a <code>main</code> genera un
+              despliegue nuevo.
+            </li>
+          </ol>
+          <pre>
+git add .
+git commit -m "Nueva entrada del blog"
+git push origin main</pre
+          >
+          <p>
+            Para probar algo rápido desde mi propio ordenador, también puedo
+            exponerlo con un túnel temporal, aunque para algo permanente
+            prefiero un despliegue de verdad.
+          </p>
+          <div class="pn">
+            <a href="#entrada-2">← Grid y Flexbox</a
+            ><a href="#proyectos">Ver mis proyectos →</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section class="page" id="proyectos">
+        <article>
+          <a class="back" href="#inicio">← Volver al inicio</a>
+          <span class="tag" style="display: block; margin-top: 1rem"
+            >Portfolio</span
+          >
+          <h1>Webs y apps que he construido</h1>
+          <p>
+            Soy Álvaro d’Ors, estudiante de Ingeniería Informática en UNIR.
+            Estos son los sitios que tomo como referencia de lo que he aprendido
+            con HTML, CSS y desarrollo web, tanto terminados como en marcha.
+          </p>
+          <h2>Publicados</h2>
+          <div class="grid">
+            <a
+              class="card"
+              href="https://www.hospitalidadlourdesrioja.org/"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <span class="st ok">Online</span>
+                <h3>Hospitalidad de Lourdes · La Rioja</h3>
+                <p>
+                  Web de una asociación católica que acompaña a enfermos en su
+                  peregrinación anual a Lourdes. Incluye noticias, programa de
+                  la peregrinación, apartados históricos, revista descargable y
+                  formulario de contacto.
+                </p>
+                <p class="url">hospitalidadlourdesrioja.org ↗</p>
+              </div></a
+            >
+            <a
+              class="card"
+              href="https://siege-iq.vercel.app/"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <span class="st ok">Online</span>
+                <h3>SiegeIQ</h3>
+                <p>
+                  Aplicación web desplegada en Vercel. Es un proyecto personal
+                  de aplicación interactiva que se carga en el navegador.
+                </p>
+                <p class="url">siege-iq.vercel.app ↗</p>
+              </div></a
+            >
+            <a
+              class="card"
+              href="https://adors.dev/"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <span class="st ok">Online</span>
+                <h3>adors.dev · Portfolio</h3>
+                <p>
+                  Mi portfolio personal, centrado en finanzas cuantitativas,
+                  machine learning e ingeniería de software. Muestra proyectos
+                  como Suriel, redes neuronales bayesianas para predicción
+                  financiera (en desarrollo).
+                </p>
+                <p class="url">adors.dev ↗</p>
+              </div></a
+            >
+          </div>
+          <h2>En desarrollo</h2>
+          <div class="grid">
+            <a
+              class="card"
+              href="https://github.com/AlvarodOrs/KeycAPP"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <span class="st wip">En desarrollo</span>
+                <h3>KeycAPP</h3>
+                <p>
+                  Proyecto aún por terminar. El código está en mi repositorio de
+                  GitHub, donde se puede seguir su evolución.
+                </p>
+                <p class="url">github.com/AlvarodOrs/KeycAPP ↗</p>
+              </div></a
+            >
+            <a
+              class="card"
+              href="https://syndication-pets-considers-assumes.trycloudflare.com/"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <span class="st wip">Demo temporal</span>
+                <h3>Prototipo en túnel de Cloudflare</h3>
+                <p>
+                  Versión de pruebas expuesta con un túnel temporal desde mi
+                  equipo. Puede no estar disponible cuando lo consultes.
+                </p>
+                <p class="url">trycloudflare.com ↗</p>
+              </div></a
+            >
+          </div>
+          <div class="pn">
+            <a href="#entrada-3">← Despliegue</a
+            ><a href="#documentacion">Ver documentación →</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- DOCUMENTACIÓN -->
+      <section class="page" id="documentacion">
+        <article>
+          <a class="back" href="#inicio">← Volver al inicio</a>
+          <h1>Documentación del proyecto</h1>
+          <h2>1. Descripción</h2>
+          <p>
+            Blog estático con un archivo HTML, una hoja de estilos CSS y una
+            imagen SVG independiente por entrada. No usa JavaScript ni
+            dependencias externas.
+          </p>
+          <h2>2. Estructura</h2>
+          <pre>
+index.html
+├─ css/style.css   Variables, layout, componentes, modo oscuro
+└─ img/            Una imagen SVG por entrada (3 archivos)
+
+Dentro de index.html:
+├─ &lt;header&gt;  Cabecera y navegación
+└─ &lt;main&gt;    Secciones: inicio, 3 entradas, proyectos, documentación</pre
+          >
+          <h2>3. Cómo funciona la navegación</h2>
+          <p>
+            Cada vista es una <code>&lt;section id="..."&gt;</code> oculta con
+            <code>display:none</code>. El selector <code>:target</code> muestra
+            la que coincide con el hash de la URL (<code>#entrada-2</code>). Si
+            no hay hash, <code>body:not(:has(:target))</code> muestra el inicio.
+            Así se pueden compartir enlaces directos y el botón Atrás funciona.
+          </p>
+          <h2>4. Decisiones de diseño</h2>
+          <ul>
+            <li>
+              <strong>Tipografía:</strong> serif para el texto (lectura) y
+              sans-serif para títulos y navegación.
+            </li>
+            <li>
+              <strong>Color:</strong> paleta cálida con acento rojo; modo oscuro
+              automático con <code>prefers-color-scheme</code>.
+            </li>
+            <li>
+              <strong>Responsive:</strong> Grid con <code>auto-fit</code> y
+              tablas con scroll horizontal.
+            </li>
+            <li>
+              <strong>Accesibilidad:</strong> HTML semántico,
+              <code>aria-label</code> en imágenes, foco visible y contraste
+              suficiente.
+            </li>
+          </ul>
+          <h2>5. Cumplimiento de la rúbrica</h2>
+          <table>
+            <tr>
+              <th>Criterio</th>
+              <th>Cómo se cumple</th>
+            </tr>
+            <tr>
+              <td>Mínimo 3 entradas</td>
+              <td>Tres entradas con texto, imagen y pie de figura</td>
+            </tr>
+            <tr>
+              <td>Navegable</td>
+              <td>Menú fijo, tarjetas, enlaces anterior/siguiente y volver</td>
+            </tr>
+            <tr>
+              <td>Diseño atractivo</td>
+              <td>Tarjetas, ilustraciones, tipografía cuidada, modo oscuro</td>
+            </tr>
+            <tr>
+              <td>Documentación</td>
+              <td>Esta página y los comentarios del código</td>
+            </tr>
+          </table>
+          <h2>6. Cómo añadir una entrada</h2>
+          <p>
+            Copiar un bloque
+            <code>&lt;section class="page" id="entrada-N"&gt;</code>, añadir su
+            tarjeta en el inicio y enlazarla en la navegación. Para un blog más
+            grande, el siguiente paso sería migrarlo a un generador estático
+            como Jekyll o Eleventy y mantener las entradas en Markdown.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>© 2026 · Hecho con HTML y CSS en Logroño</footer>
+  </body>
+</html>
