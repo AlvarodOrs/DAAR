@@ -1,6 +1,8 @@
 *
 !.gitignore
 
-!src/
-!src/**
+!css/
+!css/**
+!img/
+!img/**
 !index.html
